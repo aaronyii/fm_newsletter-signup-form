@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    height: 100vh;
+    background: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    width: 50rem; 
+    padding: 1.25rem;
+    border-radius: 20px;
+    color: hsl(235, 18%, 26%);
+    background: hsl(0, 0%, 100%);
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    margin: 2.5rem 3rem 0 1.25rem;
+}
+.left .title {
+    margin: 1.2rem 0;
+    font-size: 3rem;
+    text-align: left;
+    font-weight: bold;
+
+}
+.left .description {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    
+}
+
+
+.left ul {
+    list-style: none;
+    margin: 1.5rem auto;
+    /* padding-left: 2.5rem; */
+
+}
+.left li span {
+    vertical-align: middle;
+    margin-right: 0.625rem;
+}
+
+.left li {
+    margin: 0.625rem 0;
+    font-size: 0.9rem;
+}
+
+.left form {
+    width: 100%;
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.left label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-bottom: 0.625rem;
+    font-family: inherit;
+}
+
+.left label .invalid {
+    color: red;
+}
+.left input {
+    font-family: inherit;
+    color: hsl(231, 7%, 60%);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: none;
+}
+
+.invalid-input {
+    border: 1px solid red !important; 
+    background: rgba(255, 119, 119, 0.747)
+}
+
+.left button {
+    padding: 1.2rem 1.2rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.left button:active {
+    background: linear-gradient(to right, hsl(4, 100%, 67%) ,hsl(15, 100%, 50%));
+    box-shadow: 0 8px 20px 1px hsl(4, 100%, 67%);
+}
+
+.right {
+    width: 50%;
+    margin: auto;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.success-container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    min-width: 400px;
+    background: white;
+    flex-direction: column;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+}
+
+.success-container .logo {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.success-container .logo img {
+    height: 100%;
+}
+
+.success-container .title {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.success-container .description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.success-container button {
+    padding: 1.2rem 1.2rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.success-container button:active {
+    background: linear-gradient(to right, hsl(4, 100%, 67%) ,hsl(15, 100%, 50%));
+    box-shadow: 0 8px 20px 1px hsl(4, 100%, 67%);
+}
+
+.hidden {
+    display:none
+}
+
+@media (max-width: 48rem) {
+
+    body {
+
+        background: white;
+        align-items: start;
+        min-width: 400px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        width: 100%; 
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .left {
+        width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right img {
+        content: url(/assets/images/sign-up-mobile.svg);
+        width: 100%;
+    }
+
+    .left .title {
+        margin: 1.2rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+    
+    }
+    .success-container {
+        margin-top: 10rem;
+    }
+
+    .success-container .description {
+        margin-bottom: 12rem;
+    }
+    
+
+
+}
+
+
+
+
