@@ -176,7 +176,6 @@ body {
 @media (max-width: 48rem) {
 
     body {
-
         background: white;
         align-items: start;
         min-width: 400px;
@@ -211,16 +210,16 @@ body {
         font-weight: bold;
     
     }
+
     .success-container {
-        margin-top: 10rem;
+        margin: 0;
+        margin-top: 4rem;
+        width: 200px;
     }
 
     .success-container .description {
         margin-bottom: 12rem;
     }
-    
-
-
 }
 
 
